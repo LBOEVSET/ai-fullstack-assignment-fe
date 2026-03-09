@@ -128,7 +128,9 @@ export default function Page() {
             </p>
 
             <input
-              className="w-full border border-gray-300 rounded-lg p-3 focus:outline-none focus:ring-2 focus:ring-blue-400"
+              className="w-full border border-gray-300 rounded-lg p-3
+              text-gray-900 placeholder-gray-400
+              focus:outline-none focus:ring-2 focus:ring-blue-400"
               value={memberCard}
               onChange={(e) => setMemberCard(e.target.value)}
               placeholder="Enter card number"

@@ -20,28 +20,36 @@ export default function SummaryPanel({
       <div className="space-y-4">
 
         <div className="flex justify-between bg-gray-50 p-4 rounded-lg">
-          <span>Total before discount</span>
+          <span className="text-gray-900 font-medium">
+            Total before discount
+          </span>
           <span className="font-semibold text-gray-900">
             {summary?.totalBeforeDiscount ?? 0} THB
           </span>
         </div>
 
         <div className="flex justify-between bg-gray-50 p-4 rounded-lg">
-          <span>Item Discount</span>
+          <span className="text-gray-900 font-medium">
+            Item Discount
+          </span>
           <span className="font-semibold text-red-600">
             -{summary?.pairDiscountItems ?? 0} THB
           </span>
         </div>
 
         <div className="flex justify-between bg-gray-50 p-4 rounded-lg">
-          <span>Member Discount</span>
+          <span className="text-gray-900 font-medium">
+            Member Discount
+          </span>
           <span className="font-semibold text-red-600">
             -{summary?.memberDiscount ?? 0} THB
           </span>
         </div>
 
         <div className="flex justify-between bg-blue-50 p-5 rounded-lg font-bold">
-          <span>Final Total</span>
+          <span className="text-gray-900 font-medium">
+            Final Total
+          </span>
           <span className="text-lg font-bold text-blue-700">
             {summary?.finalTotal ?? 0} THB
           </span>
